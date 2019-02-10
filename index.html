@@ -1,0 +1,195 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>imtoby.me • portfolio</title>
+		<link rel="stylesheet" href="./resources/materialize.min.css">
+		<link href="./resources/icon" rel="stylesheet">
+		<link href="./resources/css" rel="stylesheet">
+		<script src="./resources/jquery-3.2.1.min.js" integrity="" crossorigin="anonymous"></script>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style>
+			.remove-top-margin {
+				margin-top: 0;
+			}
+
+			.remove-card-padding {
+				padding-left: 0 !important;
+				padding-right: 0 !important;
+				margin-left: 10.5px !important;
+			}
+
+			.remove-shadow {
+				-webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0);
+				-moz-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0);
+				box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0);
+			}
+			.custom-font {
+				font-family: 'Titillium Web', sans-serif;
+			}
+
+			.jumbotron-padding {
+				margin-top: 50px;
+			}
+
+			.adjust-navbar-on-desktop {
+				margin-right: 3em;
+			}
+		</style>
+
+		<script>
+			$(document).ready(function() {
+				$(".button-collapse").sideNav();
+			})
+		</script>
+	</head>
+
+	<body>
+		<div class="row remove-top-margin teal lighten-2">
+
+			<nav class="z-depth-0 transparent">
+				<div class="nav-wrapper">
+					<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+					<ul id="nav-mobile" class="side-nav custom-font">
+						<li><a href="#">Home</a></li>
+						<li><a href="#portfolio">Portfolio</a></li>
+						<li><a href="https://github.com/monotron">GitHub</a></li>
+						<li><a href="https://www.linkedin.com/in/toby-jones-a82165151/">LinkedIn</a></li>
+					</ul>
+
+					<ul id="nav-desktop" class="right hide-on-med-and-down adjust-navbar-on-desktop custom-font">
+						<li><a href="#">Home</a></li>
+						<li><a href="#portfolio">Portfolio</a></li>
+						<li><a href="https://github.com/monotron">GitHub</a></li>
+						<li><a href="https://www.linkedin.com/in/toby-jones-a82165151/">LinkedIn</a></li>
+					</ul>
+				</div>
+			</nav>
+
+			<div class="row teal lighten-2">
+				<div class="jumbotron-padding hide-on-med-and-down"></div>
+				<div class="container">
+					<h1 class="white-text custom-font" style="font-size: 8em">I'm Toby.</h1>
+					<h3 class="white-text custom-font">I'm a computer science student from the University of Nottingham.</h3>
+					<h5 class="white-text custom-font">I've also designed and built impactful user experiences for thousands to use.</h5>
+				</div>
+				<div class="jumbotron-padding hide-on-med-and-down"></div>
+			</div>
+		</div>
+
+		<div class="container" id="skills">
+			<h2 class="custom-font">My skills</h2>
+			<hr>
+			<ul class="browser-default custom-font">
+				<li>Experience with various different programming languages (e.g. C, C#, Java, Python) and web technologies (such as HTML, CSS, JavaScript, PHP, MEAN stack development)</li>
+				<li>Experience working in teams to develop software</li>
+				<li>3 years experience with Linux system administration</li>
+				<li>Able to work to deadlines and manage time effectively</li>
+				<li>Strong people skills</li>
+			</ul>
+		</div>
+
+		<div class="container" id="portfolio">
+			<h2 class="custom-font">My portfolio</h2>
+			<hr>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col s12 l6">
+					<div class="card custom-font" style="overflow: visible;">
+						<div class="card-image waves-effect waves-block waves-light">
+							<img class="activator" src="./resources/aenigma.png">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">Project Aenigma<i class="material-icons right">more_vert</i></span>
+						</div>
+						<div class="card-reveal" style="display: none; transform: translateY(0%);">
+							<span class="card-title grey-text text-darken-4">Project Aenigma<i class="material-icons right">close</i></span>
+
+							<p>Project Aenigma, written in collaboration with visual communications student <a href="https://mynameistavis.com/">Tavis Booth</a>, is a puzzle game that aims to highlight the importance of cryptography to the general public.</p>
+							<p>I wrote a text-based game engine in C#, into which levels could be easily imported to change the flow of the game. This was run on a Raspberry Pi using mono and displayed in an art gallery for visitors to play.</p>
+							<hr>
+							<a href="https://mynameistavis.com/portfolioitem/aenigma/">More information</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col s12 l6">
+					<div class="card custom-font" style="overflow: visible;">
+						<div class="card-image waves-effect waves-block waves-light">
+							<img class="activator" src="./resources/caelum.jpg">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">Project Caelum<i class="material-icons right">more_vert</i></span>
+						</div>
+						<div class="card-reveal" style="display: none; transform: translateY(0%);">
+							<span class="card-title grey-text text-darken-4">Project Caelum<i class="material-icons right">close</i></span>
+
+							<p>Project Caelum, written in collaboration with visual communications student <a href="https://mynameistavis.com/">Tavis Booth</a>, is a system for allowing people to explore environments they may otherwise not have the chance to explore, i.e. for disabled people. By placing globes on a reader, they are presented with an interactive 360 degree view of that environment, which they can move about at will.</p>
+							<p>I developed a Java application to read and write the NFC tags within the globe (using the Smart Card API), open Chrome when a globe is placed, and present a nice image-based GUI to the user.</p>
+
+							<hr>
+							<a href="https://mynameistavis.com/portfolioitem/caelum/">More information</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col s12 l6">
+					<div class="card custom-font" style="overflow: visible;">
+						<div class="card-image waves-effect waves-block waves-light">
+							<img class="activator" src="./resources/tet.jpg">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">TextEverything<i class="material-icons right">more_vert</i></span>
+						</div>
+						<div class="card-reveal" style="display: none; transform: translateY(0%);">
+							<span class="card-title grey-text text-darken-4">TextEverything<i class="material-icons right">close</i></span>
+
+							<p>TextEverything is an SMS-based chatbot written in Node.js, which can be used by anybody with a phone - it even works without an internet connection. It can also be extended by adding plugins to the server, making the possibilities for its usefulness almost infinite.</p>
+							<p>During the 2017 HackNotts hackathon, me and my teammate <a href="https://danielcordell.co.uk/">Daniel Cordell</a> developed TextEverything in the space of only 24 hours, and successfully demoed it at the end. We were awarded Bloomberg's prize of Coolest Hack for our efforts.</p>
+
+							<hr>
+							<a href="http://texteverything.net/">More information</a>
+						</div>
+					</div>
+				</div>
+				<div class="col s12 l6">
+					<div class="card custom-font" style="overflow: visible;">
+						<div class="card-image waves-effect waves-block waves-light">
+							<img class="activator" src="./resources/roombox.jpg">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">Roombox<i class="material-icons right">more_vert</i></span>
+						</div>
+						<div class="card-reveal" style="display: none; transform: translateY(0%);">
+							<span class="card-title grey-text text-darken-4">Roombox<i class="material-icons right">close</i></span>
+
+							<p>Roombox is a party system for Spotify. The host connects their Spotify account to the app, and users can join using a generated room code and add songs to the list. The app creates a playlist in the host's Spotify account, to which all suggested songs are added. This effectively creates a public queueing system for Spotify.</p>
+							<p>During the 2016 HackNotts hackathon, me and my teammate <a href="https://ax3.co.uk/">Nazar Kravtsov</a> developed Roombox in Python using the Flask framework in only 24 hours, and successfully demoed it to an audience.</p>
+
+							<hr>
+							<a href="http://github.com/Ax3Effect/roombox">More information</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+		
+
+		<footer>
+			<div class="container custom-font">
+				<hr>
+				<p class="grey-text darken-2">© <script>document.write(1900 + new Date().getYear())</script>2019 Toby Jones.<br>
+				Written using the <a href="http://materializecss.com/">Materialize CSS framework.</a><br>
+				Images for Project Aenigma and Project Caelum courtesy of <a href="https://mynameistavis.com/">Tavis Booth</a>.
+				</p>
+			</div>
+		</footer>
+	
+    <script src="./resources/materialize.min.js"></script>
+	</body>
+</html>
