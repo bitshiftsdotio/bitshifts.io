@@ -2,10 +2,10 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<title>Toby Jones • portfolio</title>
+		<script src="./resources/jquery-3.4.1.min.js" integrity="" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="./resources/materialize.min.css">
 		<link href="./resources/icon" rel="stylesheet">
 		<link href="./resources/css" rel="stylesheet">
-		<script src="./resources/jquery-3.2.1.min.js" integrity="" crossorigin="anonymous"></script>
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -40,7 +40,7 @@
 
 		<script>
 			$(document).ready(function() {
-				$(".button-collapse").sideNav();
+				$(".sidenav").sidenav();
 			})
 		</script>
 	</head>
@@ -50,13 +50,14 @@
 
 			<nav class="z-depth-0 transparent">
 				<div class="nav-wrapper">
-					<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-					<ul id="nav-mobile" class="side-nav custom-font">
+					<ul id="nav-mobile" class="sidenav custom-font">
 						<li><a href="#">Home</a></li>
 						<li><a href="#portfolio">Portfolio</a></li>
 						<li><a href="https://github.com/monotron">GitHub</a></li>
 						<li><a href="https://www.linkedin.com/in/toby-jones-a82165151/">LinkedIn</a></li>
 					</ul>
+
+					<a href="#" data-target="nav-mobile" class="sidenav-trigger hide-on-large-only"><i class="material-icons">menu</i></a>
 
 					<ul id="nav-desktop" class="right hide-on-med-and-down adjust-navbar-on-desktop custom-font">
 						<li><a href="#">Home</a></li>
@@ -71,8 +72,8 @@
 				<div class="jumbotron-padding hide-on-med-and-down"></div>
 				<div class="container">
 					<h1 class="white-text custom-font" style="font-size: 8em">I'm Toby.</h1>
-					<h3 class="white-text custom-font">I'm an Android software engineer.</h3>
-					<h5 class="white-text custom-font">Over the years, I've worked on many interesting projects used by thousands of people.</h5>
+					<h4 class="white-text custom-font">I'm a software engineer based in the East Midlands.</h4>
+					<h5 class="white-text custom-font">Over the years, I've worked on many interesting projects used by lots of people.</h5>
 				</div>
 				<div class="jumbotron-padding hide-on-med-and-down"></div>
 			</div>
@@ -94,7 +95,8 @@
 		<div class="container" id="employment-history">
 			<h2 class="custom-font">Job history</h2>
 			<hr>
-			<p class="custom-font">Please see my <a href="https://www.linkedin.com/in/toby-jones-a82165151">LinkedIn profile</a> for the most up-to-date reflection of my employment history. <strong>I am not currently looking for a new position.</strong></p>
+			<h5 class="custom-font">I'm currently searching for a new position!</h5>
+			<p class="custom-font">Please see my <a href="https://www.linkedin.com/in/toby-jones-a82165151">LinkedIn profile</a> for the most up-to-date reflection of my employment history.</p>
 		</div>
 
 		<div class="container" id="portfolio">
@@ -103,6 +105,47 @@
 		</div>
 
 		<div class="container">
+
+			<div class="row">
+				<div class="col s12 l6">
+					<div class="card custom-font" style="overflow: visible;">
+						<div class="card-image waves-effect waves-block waves-light">
+							<img class="activator" src="./resources/nasta.jpg">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">NaSTA Submission Service<i class="material-icons right">more_vert</i></span>
+						</div>
+						<div class="card-reveal" style="display: none; transform: translateY(0%);">
+							<span class="card-title grey-text text-darken-4">NaSTA Submission Service<i class="material-icons right">close</i></span>
+
+							<p>The University of Nottingham was chosen as the host university for the 2019 National Student TV Awards, otherwise known as NaSTA. As part of this, we were responsible for managing all submissions to the awards and had to provide a means for entrants to upload their entries.</p>
+							<p>NaSTA Submission Service is a bespoke web application built with Flask (Python), using the Materialize CSS framework for the frontend and MongoDB for data storage. It allows for easy submission of entries to the various award categories, and in production sat behind an Nginx reverse proxy to enable HTTPS amongst other features.</p>
+							<p>NaSTA Submission Service successfully handled all production traffic efficiently and without any downtime or errors.</p>
+							<hr>
+						</div>
+					</div>
+				</div>
+				<div class="col s12 l6">
+						<div class="card custom-font" style="overflow: visible;">
+							<div class="card-image waves-effect waves-block waves-light">
+								<img class="activator" src="./resources/tet.jpg">
+							</div>
+							<div class="card-content">
+								<span class="card-title activator grey-text text-darken-4">TextEverything<i class="material-icons right">more_vert</i></span>
+							</div>
+							<div class="card-reveal" style="display: none; transform: translateY(0%);">
+								<span class="card-title grey-text text-darken-4">TextEverything<i class="material-icons right">close</i></span>
+	
+								<p>TextEverything is an SMS-based chatbot written in Node.js, which can be used by anybody with a phone - it even works without an internet connection. It can also be extended by adding plugins to the server, making the possibilities for its usefulness almost infinite.</p>
+								<p>During the 2017 HackNotts hackathon, me and my teammate <a href="https://danielcordell.co.uk/">Daniel Cordell</a> developed TextEverything in the space of only 24 hours, and successfully demoed it at the end. We were awarded Bloomberg's prize of Coolest Hack for our efforts.</p>
+	
+								<hr>
+								<a href="http://texteverything.net/">More information</a>
+							</div>
+						</div>
+					</div>
+			</div>
+
 			<div class="row">
 				<div class="col s12 l6">
 					<div class="card custom-font" style="overflow: visible;">
@@ -148,25 +191,6 @@
 				<div class="col s12 l6">
 					<div class="card custom-font" style="overflow: visible;">
 						<div class="card-image waves-effect waves-block waves-light">
-							<img class="activator" src="./resources/tet.jpg">
-						</div>
-						<div class="card-content">
-							<span class="card-title activator grey-text text-darken-4">TextEverything<i class="material-icons right">more_vert</i></span>
-						</div>
-						<div class="card-reveal" style="display: none; transform: translateY(0%);">
-							<span class="card-title grey-text text-darken-4">TextEverything<i class="material-icons right">close</i></span>
-
-							<p>TextEverything is an SMS-based chatbot written in Node.js, which can be used by anybody with a phone - it even works without an internet connection. It can also be extended by adding plugins to the server, making the possibilities for its usefulness almost infinite.</p>
-							<p>During the 2017 HackNotts hackathon, me and my teammate <a href="https://danielcordell.co.uk/">Daniel Cordell</a> developed TextEverything in the space of only 24 hours, and successfully demoed it at the end. We were awarded Bloomberg's prize of Coolest Hack for our efforts.</p>
-
-							<hr>
-							<a href="http://texteverything.net/">More information</a>
-						</div>
-					</div>
-				</div>
-				<div class="col s12 l6">
-					<div class="card custom-font" style="overflow: visible;">
-						<div class="card-image waves-effect waves-block waves-light">
 							<img class="activator" src="./resources/roombox.jpg">
 						</div>
 						<div class="card-content">
@@ -190,7 +214,7 @@
 		<footer>
 			<div class="container custom-font">
 				<hr>
-				<p class="grey-text darken-2">© <script>document.write(1900 + new Date().getYear())</script>Toby Jones.<br>
+				<p class="grey-text darken-2">© <script>document.write(1900 + new Date().getYear())</script> Toby Jones.<br>
 				Written using the <a href="http://materializecss.com/">Materialize CSS framework.</a><br>
 				Images for Project Aenigma and Project Caelum courtesy of <a href="https://mynameistavis.com/">Tavis Booth</a>.
 				</p>
