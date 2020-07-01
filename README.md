@@ -1,2 +1,2 @@
-# monotron.me
-GitHub Pages repository for monotron.me
+# bitshifts.io
+GitHub Pages repository for bitshifts.io
